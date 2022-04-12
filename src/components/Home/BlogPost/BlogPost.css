@@ -1,0 +1,19 @@
+.afterHover{
+    display: none;
+    background: linear-gradient(100deg, #18D3B2 0%, #10CFEB 100%);
+    color: white;
+}
+.blog-card:hover .mainContent
+{
+    display: none;
+}
+.blog-card:hover .afterHover
+{
+    display: block;
+}
+.arrowIcon{
+    font-size: 35px;
+    position: absolute;
+    left: 16px;
+    bottom: 35px;
+}

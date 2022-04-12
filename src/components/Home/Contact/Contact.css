@@ -1,0 +1,14 @@
+.contact-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../../images/appointment-bg.png');
+    background-repeat: no-repeat;
+}
+.contact-from{
+    width: 70%;
+    margin: 0 auto;
+}
+.contact-from input{
+    padding: 15px;
+}
+.contact-from textarea{
+    padding: 20px;
+}
