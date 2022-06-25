@@ -6,14 +6,17 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 const serviceData = [
     {
+        id:1,
         name:'Fluoride Treatment',
         img:fluoride
     },
     {
+        id:2,
         name:'Cavity Filling',
         img:cavity
     },
     {
+        id:3,
         name:'Teeth Whitening',
         img:whitening
     }
@@ -21,12 +24,12 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section className='container my-5 text-center'>
+        <section className='container my-5 text-center' id='service'>
             <h5 style={{color:'#1CC7C1'}}>OUR SERVICES</h5>
             <h1>Service We Provide</h1>
             <div className='row my-5'>
                 {
-                    serviceData.map(service => <ServiceDetails service={service} />)
+                    serviceData.map(service => <ServiceDetails key={service.id} service={service} />)
                 }
             </div>
         </section>

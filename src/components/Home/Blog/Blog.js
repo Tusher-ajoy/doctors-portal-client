@@ -6,6 +6,7 @@ import BlogPost from '../BlogPost/BlogPost';
 
 const blogData = [
     {
+        id:1,
         title:'Check at least a doctor in a year for your teeth',
         description:'Esse laboris tempor dolore ad est aliquip ullamco deserunt velit. Fugiat adipisicing sint laborum adipisicing voluptate sit.',
         author:'Rashed Kabir',
@@ -13,6 +14,7 @@ const blogData = [
         date:'23 April 2019'
     },
     {
+        id:2,
         title:'2 times of brush in a day can keep you healthy',
         description:'Esse laboris tempor dolore ad est aliquip ullamco deserunt velit. Fugiat adipisicing sint laborum adipisicing voluptate sit.',
         author:'Dr. Caudi',
@@ -20,6 +22,7 @@ const blogData = [
         date:'23 April 2019'
     },
     {
+        id:3,
         title:'The tooth cancer is taking a challenge',
         description:'Esse laboris tempor dolore ad est aliquip ullamco deserunt velit. Fugiat adipisicing sint laborum adipisicing voluptate sit.',
         author:'Dr. John Mitchel',
@@ -36,7 +39,7 @@ const Blog = () => {
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
                 {
-                    blogData.map(data => <BlogPost data={data} />)
+                    blogData.map(data => <BlogPost key={data.id} data={data} />)
                 }
             </div>
         </section>

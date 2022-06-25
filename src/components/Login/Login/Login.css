@@ -1,0 +1,11 @@
+.login-form{
+    box-shadow: 1px 1px 5px grey;
+    margin-right: 40px;
+    padding: 50px;
+}
+
+.login-form input{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+}

@@ -37,13 +37,13 @@ const ourAddress = [
 
 const Footer = () => {
     return (
-        <footer className='py-5'>
+        <footer className='pt-5 pb-3'>
             <div className='container'>
                 <div className='row'>
                     <FooterCol key={1} menuTitle={"."} menuItems={noMenu} />
-                    <FooterCol key={1} menuTitle={"Services"} menuItems={services} />
-                    <FooterCol key={1} menuTitle={"Oral Health"} menuItems={oralHealth} />
-                    <FooterCol key={1} menuTitle={"Our Address"} menuItems={ourAddress} >
+                    <FooterCol key={2} menuTitle={"Services"} menuItems={services} />
+                    <FooterCol key={3} menuTitle={"Oral Health"} menuItems={oralHealth} />
+                    <FooterCol key={4} menuTitle={"Our Address"} menuItems={ourAddress} >
                         <ul className='my-5 social-media'>
                             <li><FontAwesomeIcon className='social-media-icon' icon={faFacebook} /></li>
                             <li><FontAwesomeIcon className='social-media-icon' icon={faGooglePlus} /></li>
@@ -54,9 +54,8 @@ const Footer = () => {
                             <button className='btn btn-primary' style={{background:'linear-gradient(100deg, #18D3B2 0%, #10CFEB 100%)',borderColor:'#1CC7C1'}}>+2025550295</button>
                         </div>
                     </FooterCol>
-                    
                 </div>
-                
+                <p className='text-secondary text-center mt-5'>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
             </div>
         </footer>
     );

@@ -1,0 +1,19 @@
+.dash-card{
+    border: none;
+}
+.dash-card.card-1{
+    background: rgb(255,72,145);
+    color: #fff;
+}
+.dash-card.card-2{
+    background: rgb(30,151,232);
+    color: #fff;
+}
+.dash-card.card-3{
+    background: rgb(23,210,180);
+    color: #fff;
+}
+.dash-card.card-4{
+    background: rgb(241, 207, 10);
+    color: #fff;
+}
